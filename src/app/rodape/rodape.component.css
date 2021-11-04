@@ -1,6 +1,11 @@
-.tm-social {
+.tm-social{
     height: 60px;
     width: 60px;
+}
+
+ul.social-network li{
+    list-style: none;
+    display: inline;
 }
 
 .tm-social:hover {
