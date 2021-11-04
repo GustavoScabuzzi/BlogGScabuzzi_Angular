@@ -1,0 +1,10 @@
+.tm-social {
+    height: 60px;
+    width: 60px;
+}
+
+.tm-social:hover {
+    height: 63px;
+    width: 63px;
+    box-shadow: 10px;
+}
