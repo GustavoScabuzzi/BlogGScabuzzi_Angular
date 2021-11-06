@@ -1,0 +1,15 @@
+.tm-social{
+    height: 60px;
+    width: 60px;
+}
+
+ul.social-network li{
+    list-style: none;
+    display: inline;
+}
+
+.tm-social:hover {
+    height: 63px;
+    width: 63px;
+    box-shadow: 10px;
+}

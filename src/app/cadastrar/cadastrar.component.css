@@ -1,0 +1,29 @@
+#img-bg{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/432eafa2-0022-410b-bb27-d2cf7ede58a3/d589gwf-78469c6d-b3bf-482d-b43d-ed10c22d97a6.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQzMmVhZmEyLTAwMjItNDEwYi1iYjI3LWQyY2Y3ZWRlNThhM1wvZDU4OWd3Zi03ODQ2OWM2ZC1iM2JmLTQ4MmQtYjQzZC1lZDEwYzIyZDk3YTYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xfGUbTDR3u-bwKrp4Tn8S7r4Q5OTUw-NdM1EPKOjKWM');
+
+    min-height: 100vh;
+    min-width: 100vw;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mask-white {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mask-white-rodape {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.mask-black-70 {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mask-black-50 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
