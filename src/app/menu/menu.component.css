@@ -1,3 +1,4 @@
-.fa:hover {
-    color: rgb(253, 0, 0);
+li.usuario-logado {
+    list-style: none;
+    display: inline;
 }

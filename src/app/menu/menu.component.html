@@ -1,33 +1,61 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="index.html">
-        <img src="../../assets/images/SNOW_logo2.png" width="30px" height="30px" alt="SNOW_logo2" class="img-fluid">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">
+    <img src="../../assets/images/SNOW_logo2.png" width="30px" height="30px" alt="SNOW_logo2" class="img-fluid">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+    aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="fa nav-link" href="index.html">Home<span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="fa nav-link" href="programacao.html">Programação<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="fa nav-link" href="viagens.html">Viagens<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="fa nav-link" href="games.html">Games<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="fa nav-link" href="contato.html">Contatos<span class="sr-only"></span></a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-light my-2 my-sm-0 mr-4" type="submit">Pesquisar</button>
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Login</button>
-        </form>
+  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="fa nav-link" href="index.html">Home<span class="sr-only">(página atual)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Sobre mim e contato
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="programacao.html">Programação</a>
+          <a class="dropdown-item" href="viagens.html">Viagens</a>
+          <a class="dropdown-item" href="games.html">Games</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="contatos.html">Contatos</a>
+        </div>
+      </li>
+
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      <button class="btn btn-outline-light my-2 my-sm-0 mr-4" type="submit">Pesquisar</button>
+    </form>
+
+    <div class="row">
+      <div class="container-fluid d-flex">
+
+        <div class="d-flex align-items-center pl-1 pr-1">
+          <li class="usuario-logado">
+            <img src="{{foto}}" alt="Imagem do usuario" width="60px" height="50px" class="img-fluid rounded-circle">
+          </li>
+        </div>
+
+        <div class="d-flex align-items-center pl-1 pr-1">
+          <li class="usuario-logado">
+            <p class="m-0 font-weight-bold text-white fs-16">{{nome}}</p>
+          </li>
+        </div>
+
+        <div class="d-flex align-items-center pl-1 pr-1">  
+          <li class="usuario-logado">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" (click)='sair()'>Sair</button>
+          </li>
+        </div>
+          
+      </div>
     </div>
+  </div>
 </nav>
