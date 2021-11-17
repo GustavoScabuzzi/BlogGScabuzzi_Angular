@@ -24,6 +24,7 @@ export class InicioComponent implements OnInit {
 
   user: Usuario = new Usuario()
   idUser = environment.id
+  nomeUser = environment.nome
 
   constructor(
     private router: Router,
@@ -39,9 +40,10 @@ export class InicioComponent implements OnInit {
       this.router.navigate(['/entrar']);
     }
 
+    this.authService.refreshToken()
     this.findAllTemas()
     this.findAllPostagens()
-    this.findByIdUser()
+    
   }
 
   findAllTemas(){
